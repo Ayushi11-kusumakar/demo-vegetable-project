@@ -1,0 +1,24 @@
+<div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+    <div class="wrapper wrapper--w960">
+        <div class="card card-2">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Admin Login Info</h2>
+                <form #loginForm="ngForm" (ngSubmit)="submitLoginForm(loginForm)">
+                    <div class="input-group">
+                        <input class="input--style-2" type="email" placeholder="Email Address" [(ngModel)]="loginView.email" name="email">
+                    </div>
+
+                    <div class="input-group">
+                        <input class="input--style-2" type="password" placeholder="Password" [(ngModel)]="loginView.password" name="password">
+                    </div>
+
+                    <div class="p-t-30">
+                        <button class="btn btn--radius btn--green" type="submit">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
